@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhyaz Internship Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f4;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        legend {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: inline-block;
+            margin-bottom: 10px;
+            vertical-align: middle;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+
+        input[type="submit"] {
+            padding: 12px 24px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            resize: vertical;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<h2>Abhyaz Internship Feedback Form</h2>
+
+<form action="#" method="post">
+
+    <fieldset>
+        <legend>Personal Details:</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        
+        <label for="startDate">Internship Start Date:</label>
+        <input type="date" id="startDate" name="startDate"><br><br>
+
+        <label for="endDate">Internship End Date:</label>
+        <input type="date" id="endDate" name="endDate"><br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>1. Overall Experience</legend>
+        
+        <label>How would you rate your overall experience during the internship?</label><br>
+        <input type="radio" id="excellent" name="experience" value="Excellent">
+        <label for="excellent">Excellent</label><br>
+
+        <input type="radio" id="good" name="experience" value="Good">
+        <label for="good">Good</label><br>
+
+        <input type="radio" id="average" name="experience" value="Average">
+        <label for="average">Average</label><br>
+
+        <input type="radio" id="belowAverage" name="experience" value="Below Average">
+        <label for="belowAverage">Below Average</label><br>
+
+        <input type="radio" id="poor" name="experience" value="Poor">
+        <label for="poor">Poor</label><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>2. Learning and Development</legend>
+        
+        <label>Did the internship meet your expectations in terms of learning and skill development?</label><br>
+        <input type="radio" id="yesExpectations" name="expectations" value="Yes">
+        <label for="yesExpectations">Yes</label><br>
+
+        <input type="radio" id="noExpectations" name="expectations" value="No">
+        <label for="noExpectations">No</label><br>
+
+        <label for="improvement">If no, please specify areas for improvement:</label><br>
+        <textarea id="improvement" name="improvement" rows="4" cols="50"></textarea><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>3. Mentorship and Guidance</legend>
+        
+        <label>How would you rate the mentorship and guidance provided during your internship?</label><br>
+        <input type="radio" id="excellentMentorship" name="mentorship" value="Excellent">
+        <label for="excellentMentorship">Excellent</label><br>
+
+        <input type="radio" id="goodMentorship" name="mentorship" value="Good">
+        <label for="goodMentorship">Good</label><br>
+
+        <input type="radio" id="averageMentorship" name="mentorship" value="Average">
+        <label for="averageMentorship">Average</label><br>
+
+        <input type="radio" id="belowAverageMentorship" name="mentorship" value="Below Average">
+        <label for="belowAverageMentorship">Below Average</label><br>
+
+        <input type="radio" id="poorMentorship" name="mentorship" value="Poor">
+        <label for="poorMentorship">Poor</label><br>
+
+        <label for="commentsMentorship">Please provide any additional comments or suggestions regarding mentorship:</label><br>
+        <textarea id="commentsMentorship" name="commentsMentorship" rows="4" cols="50"></textarea><br>
+    </fieldset>
+
+    <input type="submit" value="Submit Feedback">
+</form>
+
+</body>
+</html>
